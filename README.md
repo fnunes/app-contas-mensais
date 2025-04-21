@@ -70,7 +70,7 @@ npm run dev
 ---
 
 ---
-Ao criar o arquivo src/services/firebase.js, incluir esse conteúdo e preencher com as informações corretas da sua conta
+Ao criar o arquivo src/services/firebase.js, incluir esse conteúdo e preencher com as informações corretas da sua conta.
 ```bash
 import { initializeApp } from 'firebase/app'
 import { getAuth, GoogleAuthProvider } from 'firebase/auth'
