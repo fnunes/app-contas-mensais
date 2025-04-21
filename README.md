@@ -65,7 +65,7 @@ npm run dev
 1. Crie um projeto no [Firebase Console](https://console.firebase.google.com/)
 2. Ative Firestore e Authentication (e-mail/senha + Google)
 3. Copie as credenciais para `src/services/firebase.js`
-4. Caso o arquivo `src/services/firebase.js` não existe, você precisa criá-lo.
+4. Caso o arquivo `src/services/firebase.js` não exista, você precisa criá-lo.
 
 ---
 
