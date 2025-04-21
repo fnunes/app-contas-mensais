@@ -1,12 +1,109 @@
-# Vue 3 + Vite
+# Contas Mensais - Aplicação Web
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Gerencie suas contas mensais com organização e praticidade. Desenvolvido com Vue 3, Firebase, Bootstrap e empacotado para desktop com Tauri.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+---
 
+## 📦 Tecnologias Utilizadas
+- [Vue 3](https://vuejs.org/)
+- [Vite](https://vitejs.dev/)
+- [Firebase Auth & Firestore](https://firebase.google.com/)
+- [Bootstrap 5](https://getbootstrap.com/)
+- [Tauri](https://tauri.app/) (opcional para versão desktop)
 
+---
+
+## 🚀 Funcionalidades
+
+- Autenticação com e-mail/senha ou Google
+- Cadastro de contas com recorrência mensal
+- Listagem com filtros por mês e ano
+- Marcação de conta como paga e desmarcação
+- Alertas para contas próximas do vencimento (em até 3 dias)
+- Exclusão de contas
+- Deploy web via Firebase ou Docker
+- Empacotamento para desktop com Tauri
+
+---
+
+## 📁 Estrutura de Pastas
+```
+/src
+ ├─ components
+ │   └─ AccountCard.vue
+ ├─ services
+ │   └─ firebase.js
+ ├─ views
+ │   ├─ LoginView.vue
+ │   ├─ DashboardView.vue
+ │   └─ CadastroView.vue
+ ├─ router
+ │   └─ index.js
+ └─ App.vue
+```
+
+---
+
+## 🔧 Instalação e Execução
+
+```bash
+# Clonar o projeto
+git clone https://github.com/seuusuario/contas-mensais.git
+cd contas-mensais
+
+# Instalar dependências
+npm install
+
+# Rodar em desenvolvimento
+npm run dev
+```
+
+---
+
+## 🔐 Configuração do Firebase
+
+1. Crie um projeto no [Firebase Console](https://console.firebase.google.com/)
+2. Ative Firestore e Authentication (e-mail/senha + Google)
+3. Copie as credenciais para `src/services/firebase.js`
+
+---
+
+## 🐳 Docker
+```bash
 npm run build
+# Build da imagem
 docker build -t contas-mensais-app .
+# Rodar container
 docker run -d -p 8080:80 contas-mensais-app
-
+# Opcionalmente com docker compose
 docker-compose up --build
+```
+Acesse: [http://localhost:8080](http://localhost:8080)
+
+---
+
+## 🖥️ Versão Desktop com Tauri
+
+```bash
+# Instale o Tauri
+npm install --save-dev @tauri-apps/cli
+npx tauri init
+
+# Empacotar aplicação
+npm run build
+npx tauri build
+```
+
+---
+
+## 📝 Licença
+Este projeto é licenciado sob a MIT License.
+
+---
+
+## 🙌 Contribuições
+Pull requests são bem-vindos! Para contribuições maiores, abra uma issue primeiro.
+
+---
+
+Feito com 💚 para manter suas contas organizadas.
