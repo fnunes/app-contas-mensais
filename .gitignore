@@ -20,6 +20,7 @@ coverage
 public
 public/*
 package-lock.json
+src/services/firebase.js
 
 # Editor directories and files
 .vscode/*
@@ -31,3 +32,4 @@ package-lock.json
 *.njsproj
 *.sln
 *.sw?
+src/services/firebase.js
